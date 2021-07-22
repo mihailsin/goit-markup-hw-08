@@ -4,6 +4,12 @@
   align-items: $secondary-axis;
 }
 
+@mixin rowedFlex($type: flex, $direction: column, $secondary-axis: flex-start) {
+  display: $type;
+  flex-direction: $direction;
+  align-items: $secondary-axis;
+}
+
 @mixin wrappedFlex($type: flex, $line-wrapping: wrap) {
   display: $type;
   flex-wrap: $line-wrapping;
