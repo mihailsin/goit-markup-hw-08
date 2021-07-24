@@ -4,7 +4,7 @@
   align-items: $secondary-axis;
 }
 
-@mixin rowedFlex($type: flex, $direction: column, $secondary-axis: flex-start) {
+@mixin columnedFlex($type: flex, $direction: column, $secondary-axis: flex-start) {
   display: $type;
   flex-direction: $direction;
   align-items: $secondary-axis;

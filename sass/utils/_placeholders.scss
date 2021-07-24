@@ -9,8 +9,8 @@
   border: none;
   border-radius: 4px;
 
-  color: $hero-text-color;
-  background-color: $accent-color;
+  color: var(--hero-text-color);
+  background-color: var(--accent-color);
 
   font-family: inherit;
   font-size: 16px;
@@ -19,18 +19,43 @@
   cursor: pointer;
   text-align: center;
 
-  transition: background-color 250ms $transform-timing-function;
+  transition: background-color 250ms var(--transform-timing-function);
 }
 %section-paddings {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   padding-top: 94px;
   padding-bottom: 94px;
 }
 %section-title {
+  @media screen and(max-width: 1199px) {
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
   margin-bottom: 50px;
 
-  color: $title-text-color;
+  color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+}
+%menu-toggle {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 15px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
 }

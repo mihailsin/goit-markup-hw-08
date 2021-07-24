@@ -1,48 +1,59 @@
-// .submit-block {
-//   margin-left: auto;
-// }
-// .submit-block__title {
-//   margin-bottom: 20px;
+.submit-block {
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
+.submit-block__wrapper {
+  @include columnedFlex;
+  align-items: center;
+}
+.submit-block__title {
+  margin-bottom: 20px;
 
-//   color: $whitetext-color;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.03em;
-//   text-transform: uppercase;
-// }
-// .submit-form {
-//   display: flex;
-// }
-// .submit-form__input {
-//   width: 358px;
-//   height: 50px;
-//   padding-left: 16px;
-//   border: 1px solid $footer-input-border;
-//   filter: $footer-input-blur;
-//   border-radius: 4px;
+  color: var(--whitetext-color);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.submit-form {
+  @media screen and (max-width: 767px) {
+    @include columnedFlex;
+  }
+  display: flex;
+}
+.submit-form__input {
+  width: 95vw;
+  height: 50px;
+  padding-left: 16px;
+  border: 1px solid var(--footer-input-border);
+  filter: var(--footer-input-blur);
+  border-radius: 4px;
 
-//   background-color: $footer-bckg-color;
-//   color: $whitetext-color;
+  background-color: var(--footer-bckg-color);
+  color: var(--whitetext-color);
+  margin-bottom: 20px;
 
-//   &::placeholder {
-//     color: $foot-contacts-color;
-//   }
-// }
-// .submit-form__button {
-//   @extend %button;
-//   display: inline-flex;
-//   margin-left: 12px;
-//   padding-top: 10px;
-//   padding-bottom: 10px;
-//   padding-left: 28px;
-//   padding-right: 28px;
-//   &:hover,
-//   &:focus {
-//     background-color: $modal-btn-hover-color;
-//   }
-// }
-// .submit-form__icon {
-//   align-self: center;
-//   fill: $whitetext-color;
-//   margin-left: 10px;
-// }
+  &::placeholder {
+    color: var(--foot-contacts-color);
+  }
+}
+.submit-form__button {
+  @extend %button;
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+  &:hover,
+  &:focus {
+    background-color: var(--modal-btn-hover-color);
+  }
+}
+.submit-form__icon {
+  align-self: center;
+  fill: var(--whitetext-color);
+  margin-left: 10px;
+}

@@ -1,4 +1,5 @@
 .page-header {
+  position: relative;
   border-bottom: 1px solid var(--header-border-color);
 
   font-weight: 500;
@@ -7,6 +8,116 @@
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
+.logo--light-background {
+  color: var(--blacktext-color);
+}
+.page-header__menu-toggle {
+  @extend %menu-toggle;
+}
+
+.site-nav__list {
+  @media screen and (max-width: 767px) {
+    @include columnedFlex;
+
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    margin-bottom: 302px;
+  }
+}
+.site-nav__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+}
+.site-nav__link {
+  @media screen and (max-width: 767px) {
+    position: relative;
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  transition: color 250ms $transform-timing-function;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.navigation-list__link--current {
+  color: var(--accent-color);
+}
+
+.contact-list {
+  @media screen and (max-width: 767px) {
+    @include columnedFlex;
+    margin-bottom: 64px;
+  }
+}
+.contact-list__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+}
+.contact-list__link {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  color: $primary-text-color;
+
+  transition: color 250ms var(--transform-timing-function);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.contact-list__icon {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  margin-right: 10px;
+
+  fill: var(--primary-text-color);
+
+  transition: fill 250ms var(--transform-timing-function);
+
+  .contact-list__link:hover &,
+  .contact-list__link:focus & {
+    fill: $accent-color;
+  }
+}
+.socials {
+  display: flex;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+
+  letter-spacing: 0.02em;
+}
+
+.socials__link {
+  color: var(--accent-color);
+}
+
 // .container {
 //   width: 1200px;
 //   margin: 0 auto;
