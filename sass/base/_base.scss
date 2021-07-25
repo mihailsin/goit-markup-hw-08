@@ -35,6 +35,8 @@ ol {
 /* Задан, чтобы убрать нижний отступ у картинок */
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 a {
   color: var(--title-text-color);
@@ -42,6 +44,7 @@ a {
 }
 
 .container {
+  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -54,7 +57,7 @@ a {
     width: 768px;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     width: 1200px;
   }
 }

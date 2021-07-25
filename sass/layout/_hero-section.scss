@@ -9,19 +9,23 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 118px 60px;
+  padding: 118px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px;
+  }
 }
 .hero-title {
   color: var(--hero-text-color);
 
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.61;
+  @include fontSource(900, 26px, 1.61, 0.06em);
   text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    @include fontSource(900, 44px, 1.36, 0.06em);
+  }
 }
 .hero-button {
   @extend %button;
@@ -31,38 +35,3 @@
     background-color: var(--modal-btn-hover-color);
   }
 }
-
-// .hero {
-//   padding-top: 200px;
-//   padding-bottom: 200px;
-
-//   background-color: $footer-bckg-color;
-//   background-image: linear-gradient($hero-overlay-color, $hero-overlay-color),
-//     url(../images/hero-bcg-img.jpg);
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-position: center;
-
-//   text-align: center;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
-// .hero-title {
-//   margin: 0;
-//   margin-bottom: 30px;
-
-//   color: $hero-text-color;
-//   font-weight: 900;
-//   font-size: 44px;
-//   line-height: 1.36;
-//   letter-spacing: 0.06em;
-//   text-transform: uppercase;
-// }
-// .hero-button {
-//   @extend %button;
-
-//   &:hover,
-//   &:focus {
-//     background-color: $modal-btn-hover-color;
-//   }
-// }

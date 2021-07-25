@@ -33,7 +33,7 @@
           aria-controls="mobile-menu"
           js-open-menu
         >
-          <svg class="mobile-menu__icon" style="width: 24px;height: 16px;">
+          <svg class="mobile-menu__icon" style="width: 24px; height: 16px">
             <use href="./images/symbol-defs.svg#burger-icon"></use>
           </svg>
         </button>
@@ -89,10 +89,8 @@
       <!--Список преимуществ-->
       <section class="advantages-section">
         <div class="container">
-          <!-- Это логический заголовок, которого нет на макете.
-            Позже он будет скрыт при помощи CSS -->
           <h2 class="advantages-section__title visually-hidden">Наши преимущества</h2>
-          <ul class="advantages-list unmarked">
+          <ul class="advantages-list">
             <li class="advantages-list__item">
               <div class="advantages-list__thumb">
                 <svg class="advantages-icon">
@@ -187,13 +185,7 @@
           <h2 class="team-section__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-              <img
-                class="team-list__pic"
-                src="./images/igor.jpg"
-                alt="Член команды"
-                width="270"
-                height="260"
-              />
+              <img class="team-list__pic" src="./images/igor.jpg" alt="Член команды" />
               <div class="team-list__meta">
                 <h3 class="team-list__title">Игорь Демьяненко</h3>
                 <p class="team-list__description" lang="en">Product Designer</p>
@@ -226,13 +218,7 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-list__pic"
-                src="./images/olga.jpg"
-                alt="Член команды"
-                width="270"
-                height="260"
-              />
+              <img class="team-list__pic" src="./images/olga.jpg" alt="Член команды" />
               <div class="team-list__meta">
                 <h3 class="team-list__title">Ольга Репина</h3>
                 <p class="team-list__description" lang="en">Frontend Developer</p>
@@ -265,13 +251,7 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-list__pic"
-                src="./images/nikolai.jpg"
-                alt="Член команды"
-                width="270"
-                height="260"
-              />
+              <img class="team-list__pic" src="./images/nikolai.jpg" alt="Член команды" />
               <div class="team-list__meta">
                 <h3 class="team-list__title">Николай Тарасов</h3>
                 <p class="team-list__description" lang="en">Marketing</p>
@@ -304,13 +284,7 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                class="member-pic"
-                src="./images/mikhail.jpg"
-                alt="Член команды"
-                width="270"
-                height="260"
-              />
+              <img class="member-pic" src="./images/mikhail.jpg" alt="Член команды" />
               <div class="team-list__meta">
                 <h3 class="team-list__title">Михаил Ермаков</h3>
                 <p class="team-list__description" lang="en">UI Designer</p>
@@ -393,7 +367,7 @@
     <!--Footer-->
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__logo-adress-block">
+        <div class="logo-address__wrapper">
           <a href="./index.html" class="logo page-footer__logo"
             >Web<span class="logo--dark-background">Studio</span></a
           >
@@ -448,20 +422,20 @@
             </li>
           </ul>
         </div>
-        <!-- Submit-form -->
-        <div class="submit-block">
-          <div class="submit-block__wrapper">
-            <h3 class="submit-block__title">Подпишитесь на рассылку</h3>
-          </div>
-          <form class="submit-form">
-              <input type="email" name="email" placeholder="E-mail" class="submit-form__input" />
-            <button type="submit" class="submit-form__button">
-              Подписаться<svg class="submit-form__icon" style="width: 24px; height: 24px">
-                <use href="./images/symbol-defs.svg#icon-paperplane"></use>
-              </svg>
-            </button>
-          </form>
+      </div>
+      <!-- Submit-form -->
+      <div class="submit-block">
+        <div class="submit-block__wrapper">
+          <h3 class="submit-block__title">Подпишитесь на рассылку</h3>
         </div>
+        <form class="submit-form">
+          <input type="email" name="email" placeholder="E-mail" class="submit-form__input" />
+          <button type="submit" class="submit-form__button">
+            Подписаться<svg class="submit-form__icon" style="width: 24px; height: 24px">
+              <use href="./images/symbol-defs.svg#icon-paperplane"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <!-- ==========Modal================= -->

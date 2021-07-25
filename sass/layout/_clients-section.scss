@@ -6,17 +6,20 @@
   @extend %section-title;
 }
 .clients-list {
-  @media screen and(max-width: 767px) {
-    @include wrappedFlex;
-  }
-  display: flex;
+  @include wrappedFlex;
 }
 .clients-list__item {
   margin-top: 30px;
   margin-left: 30px;
-  flex-basis: calc((100% - 60px) / 2);
   width: 170px;
   height: 92px;
+  flex-basis: calc((100% - 60px) / 2);
+  @media screen and(min-width: 768px) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+  @media screen and(min-width: 1200px) {
+    flex-basis: calc((100% - 6 * 30px) / 6);
+  }
 }
 .clients-list__item:not(:first-child) {
   margin-left: 30px;
@@ -25,12 +28,13 @@
   @include centeredFlex;
   width: 100%;
   height: 100%;
-  border: 1px solid $primary-icon-fill;
+  border: 1px solid var(--primary-icon-fill);
   border-radius: 4px;
 
-  fill: $primary-icon-fill;
+  fill: var(--primary-icon-fill);
 
-  transition: fill 250ms $transform-timing-function, border 250ms $transform-timing-function;
+  transition: fill 250ms var(--transform-timing-function),
+    border 250ms var(--transform-timing-function);
 
   &:hover,
   &:focus {

@@ -12,6 +12,9 @@
   color: var(--blacktext-color);
 }
 .page-header__menu-toggle {
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
   @extend %menu-toggle;
 }
 
