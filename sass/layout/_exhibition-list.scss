@@ -4,20 +4,27 @@
   }
 }
 .exhibition-list__item {
+  @media screen and(max-width: 767px) {
+    margin-bottom: 30px;
+  }
   @media screen and(min-width: 768px) {
     margin-top: 30px;
     margin-left: 30px;
     flex-basis: calc((100% - 60px) / 2);
   }
   @media screen and(min-width: 1200px) {
-    margin-top: 30px;
-    margin-left: 30px;
     flex-basis: calc((100% - 90px) / 3);
+  }
+
+  &:first-child .exhibition-list__card-meta {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-bottom: 56px;
+    }
   }
 }
 .exhibition-list__link {
   display: block;
-  transition: box-shadow 250ms $transform-timing-function;
+  transition: box-shadow 250ms var(--transform-timing-function);
 
   &:hover,
   &:focus {
@@ -26,6 +33,7 @@
   }
 }
 .exhibition-list__card-thumb {
+  height: auto;
   position: relative;
   overflow: hidden;
 }

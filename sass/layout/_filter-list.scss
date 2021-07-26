@@ -4,13 +4,13 @@
 .filter-list {
   display: flex;
   flex-wrap: wrap;
+  @media screen and(min-width: 768px) {
+    @include centeredFlex;
+  }
 
   margin-bottom: 50px;
 }
 .filter-list__item {
-  @media screen and(min-width: 768px) {
-    @include centeredFlex;
-  }
   @media screen and(max-width: 767px) {
     margin-bottom: 15px;
   }
