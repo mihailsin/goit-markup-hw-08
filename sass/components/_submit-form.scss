@@ -1,14 +1,8 @@
-.submit-block {
-  @media screen and (min-width: 1200px) {
-    margin-left: auto;
-  }
+.submit-form {
+  @include columnedFlex($secondary-axis: center);
+  width: 100%;
 }
-.submit-block__wrapper {
-  @media screen and (max-width: 1199px) {
-    @include columnedFlex($secondary-axis: center);
-  }
-}
-.submit-block__title {
+.submit-form__title {
   margin-bottom: 20px;
 
   color: var(--whitetext-color);
@@ -17,24 +11,8 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.submit-form {
-  @media screen and (max-width: 1199px) {
-    @include columnedFlex($secondary-axis: center);
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-  }
-}
 .submit-form__input {
-  @media screen and (min-width: 768px) {
-    width: 450px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 358px;
-  }
-
+  display: block;
   width: 100%;
   height: 50px;
   padding-left: 16px;
@@ -52,7 +30,7 @@
 }
 .submit-form__button {
   @extend %button;
-  display: inline-flex;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   padding-top: 10px;
