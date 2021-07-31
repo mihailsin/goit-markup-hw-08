@@ -1,6 +1,13 @@
 .submit-form {
-  @include columnedFlex($secondary-axis: center);
-  width: 100%;
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+    @include columnedFlex($secondary-axis: center);
+  }
+}
+.submit-form__block {
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+  }
 }
 .submit-form__title {
   margin-bottom: 20px;
@@ -46,4 +53,17 @@
   align-self: center;
   fill: var(--whitetext-color);
   margin-left: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .submit-form {
+    @include columnedFlex;
+  }
+  .submit-form__input {
+    margin-right: 12px;
+    width: 358px;
+  }
+  .submit-form__block {
+    display: flex;
+  }
 }

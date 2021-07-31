@@ -1,8 +1,10 @@
 .page-header {
+  border-bottom: 1px solid var(--header-border-color);
   position: relative;
+  @include fontSource(500, 14px, 1.14, 0.02em);
 }
 .logo--light-background {
-  color: $blacktext-color;
+  color: var(--blacktext-color);
 }
 .burger-button {
   position: absolute;
@@ -35,10 +37,7 @@
 @media screen and (min-width: 768px) {
   .container--flexed {
     @include centeredFlex;
-  }
-  .site-nav {
-    display: block;
-    margin-left: 93px;
+    justify-content: space-between;
   }
   .site-nav__list {
     display: flex;
@@ -52,15 +51,15 @@
     padding-top: 32px;
     padding-bottom: 32px;
 
-    transition: color 250ms $transform-timing-function;
+    transition: color 250ms var(--transform-timing-function);
 
     &:hover,
     &:focus {
-      color: $accent-color;
+      color: var(--accent-color);
     }
   }
   .site-nav__link--current {
-    color: $accent-color;
+    color: var(--accent-color);
 
     &::after {
       position: absolute;
@@ -72,42 +71,64 @@
       height: 4px;
       border-radius: 2px;
 
-      background-color: $accent-color;
+      background-color: var(--accent-color);
     }
   }
   .contact-list {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+    @include columnedFlex;
   }
-  .contact-list__item + .contact-list__item {
-    margin-left: 30px;
+  @media screen and (max-width: 1199px) {
+    .contact-list__item {
+      &:first-child {
+        margin-bottom: 10px;
+      }
+    }
   }
   .contact-list__link {
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
 
-    color: $primary-text-color;
+    color: var(--primary-text-color);
 
-    transition: color 250ms $transform-timing-function;
+    transition: color 250ms var(--transform-timing-function);
 
     &:hover,
     &:focus {
-      color: $accent-color;
+      color: var(--accent-color);
     }
   }
   .contact-list__icon {
     margin-right: 10px;
 
-    fill: $primary-text-color;
+    fill: var(--primary-text-color);
 
-    transition: fill 250ms $transform-timing-function;
+    transition: fill 250ms var(--transform-timing-function);
 
     .contact-list__link:hover &,
     .contact-list__link:focus & {
-      fill: $accent-color;
+      fill: var(--accent-color);
     }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container--flexed {
+    justify-content: unset;
+  }
+  .site-nav {
+    margin-left: 93px;
+  }
+  .contact-list {
+    @include centeredFlex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+  }
+  .contact-list__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .contact-list__item + .contact-list__item {
+    margin-left: 30px;
   }
 }

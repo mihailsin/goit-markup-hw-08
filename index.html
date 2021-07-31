@@ -64,7 +64,6 @@
           </svg>
         </button>
       </div>
-
       <!-- mobile-menu -->
       <div class="mobile-menu" data-menu>
         <div class="container--mobile-menu">
@@ -74,8 +73,8 @@
             </svg>
           </button>
           <ul class="navigation">
-            <li class="navigation__item"><a class="navigation__link" href="">Студия</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="">Портфолио</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="./index.html">Студия</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="./portfolio.html">Портфолио</a></li>
             <li class="navigation__item"><a class="navigation__link" href="">Контакты</a></li>
           </ul>
           <div class="monile-menu__contacts-wrapper">
@@ -442,12 +441,14 @@
         <!-- Submit-form -->
         <form class="submit-form">
           <b class="submit-form__title">Подпишитесь на рассылку</b>
-          <input type="email" name="email" placeholder="E-mail" class="submit-form__input" />
-          <button type="submit" class="submit-form__button">
-            Подписаться<svg class="submit-form__icon" style="width: 24px; height: 24px">
-              <use href="./images/symbol-defs.svg#icon-paperplane"></use>
-            </svg>
-          </button>
+          <div class="submit-form__block">
+            <input type="email" name="email" placeholder="E-mail" class="submit-form__input" />
+            <button type="submit" class="submit-form__button">
+              Подписаться<svg class="submit-form__icon" style="width: 24px; height: 24px">
+                <use href="./images/symbol-defs.svg#icon-paperplane"></use>
+              </svg>
+            </button>
+          </div>
         </form>
       </div>
     </footer>
