@@ -1,22 +1,30 @@
 .page-header {
   border-bottom: 1px solid var(--header-border-color);
-  position: relative;
+  // position: relative;
   @include fontSource(500, 14px, 1.14, 0.02em);
+}
+.container--flexed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo--light-background {
   color: var(--blacktext-color);
 }
 .burger-button {
-  position: absolute;
   display: inline-block;
   background-color: transparent;
 
   width: 40px;
   height: 40px;
-  top: 10px;
-  right: 15px;
   padding: 0;
   border: none;
+
+  &:hover .burger-button__icon,
+  &:focus .burger-button__icon {
+    transition: fill 250ms var(--transform-timing-function);
+    fill: var(--accent-color);
+  }
 
   @media screen and (min-width: 768px) {
     display: none;

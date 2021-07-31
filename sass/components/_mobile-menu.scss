@@ -40,6 +40,12 @@
   right: 15px;
   padding: 0;
   border: none;
+
+   &:hover .mobile-menu__close-icon,
+  &:focus .mobile-menu__close-icon {
+    transition: fill 250ms var(--transform-timing-function);
+    fill: var(--accent-color);
+  }
 }
 .mobile-menu__close-icon {
   width: 40px;

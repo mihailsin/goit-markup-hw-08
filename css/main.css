@@ -243,11 +243,22 @@ a {
 
 .page-header {
   border-bottom: 1px solid var(--header-border-color);
-  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.container--flexed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo--light-background {
@@ -255,15 +266,19 @@ a {
 }
 
 .burger-button {
-  position: absolute;
   display: inline-block;
   background-color: transparent;
   width: 40px;
   height: 40px;
-  top: 10px;
-  right: 15px;
   padding: 0;
   border: none;
+}
+
+.burger-button:hover .burger-button__icon,
+.burger-button:focus .burger-button__icon {
+  -webkit-transition: fill 250ms var(--transform-timing-function);
+  transition: fill 250ms var(--transform-timing-function);
+  fill: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -416,6 +431,7 @@ a {
 }
 
 .hero {
+  height: 400px;
   background-color: var(--footer-bckg-color);
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-overlay-color)), to(var(--hero-overlay-color))), url(../images/hero-section/mobile/hero-background-mobile.jpg);
   background-image: linear-gradient(var(--hero-overlay-color), var(--hero-overlay-color)), url(../images/hero-section/mobile/hero-background-mobile.jpg);
@@ -451,6 +467,9 @@ a {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-overlay-color)), to(var(--hero-overlay-color))), url(../images/hero-section/desktop/hero-background-desktop.jpg);
     background-image: linear-gradient(var(--hero-overlay-color), var(--hero-overlay-color)), url(../images/hero-section/desktop/hero-background-desktop.jpg);
   }
@@ -1516,6 +1535,13 @@ a {
   right: 15px;
   padding: 0;
   border: none;
+}
+
+.mobile-menu__close-button:hover .mobile-menu__close-icon,
+.mobile-menu__close-button:focus .mobile-menu__close-icon {
+  -webkit-transition: fill 250ms var(--transform-timing-function);
+  transition: fill 250ms var(--transform-timing-function);
+  fill: var(--accent-color);
 }
 
 .mobile-menu__close-icon {
