@@ -32,7 +32,9 @@
               <a href="./index.html" class="site-nav__link">Студия</a>
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a>
+              <a href="./portfolio.html" class="site-nav__link site-nav__link--current"
+                >Портфолио</a
+              >
             </li>
             <li class="site-nav__item">
               <a href="" class="site-nav__link">Контакты</a>
@@ -72,8 +74,12 @@
             </svg>
           </button>
           <ul class="navigation">
-            <li class="navigation__item"><a class="navigation__link" href="./index.html">Студия</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="./portfolio.html">Портфолио</a></li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./index.html">Студия</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./portfolio.html">Портфолио</a>
+            </li>
             <li class="navigation__item"><a class="navigation__link" href="">Контакты</a></li>
           </ul>
           <div class="monile-menu__contacts-wrapper">
@@ -120,7 +126,55 @@
             <li class="exhibition-list__item">
               <a class="exhibition-list__link" href=""
                 ><div class="exhibition-list__card-thumb">
-                  <img src="./images/techcrack.jpg" alt="" />
+                  <picture class="exhibition-list__picture">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/exhibition-section/desktop/techcrack-desktop.webp    1x,
+                        ./images/exhibition-section/desktop/techcrack-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/exhibition-section/desktop/techcrack-desktop.jpg    1x,
+                        ./images/exhibition-section/desktop/techcrack-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/exhibition-section/tablet/techcrack-tablet.webp    1x,
+                        ./images/exhibition-section/tablet/techcrack-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/exhibition-section/tablet/techcrack-tablet.jpg    1x,
+                        ./images/exhibition-section/tablet/techcrack-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 260px)"
+                      srcset="
+                        ./images/exhibition-section/mobile/techcrack-mobile.webp    1x,
+                        ./images/exhibition-section/mobile/techcrack-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 260px)"
+                      srcset="
+                        ./images/exhibition-section/mobile/techcrack-mobile.jpg    1x,
+                        ./images/exhibition-section/mobile/techcrack-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img src="./images/techcrack-tablet.jpg" alt="" />
+                  </picture>
+
                   <div class="exhibition-list__overlay">
                     <p>
                       Технокряк это современная площадка распространения коронавируса. Компании
@@ -139,7 +193,54 @@
             <li class="exhibition-list__item">
               <a class="exhibition-list__link" href=""
                 ><div class="exhibition-list__card-thumb">
-                  <img src="./images/nba-poster.jpg" alt="Постер матча" />
+                  <picture class="exhibition-list__picture">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/exhibition-section/desktop/nba-poster-desktop.webp    1x,
+                        ./images/exhibition-section/desktop/nba-poster-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/exhibition-section/desktop/nba-poster-desktop.jpg    1x,
+                        ./images/exhibition-section/desktop/nba-poster-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/exhibition-section/tablet/nba-poster-tablet.webp    1x,
+                        ./images/exhibition-section/tablet/nba-poster-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/exhibition-section/tablet/nba-poster-tablet.jpg    1x,
+                        ./images/exhibition-section/tablet/nba-poster-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 260px)"
+                      srcset="
+                        ./images/exhibition-section/mobile/nba-poster-mobile.webp    1x,
+                        ./images/exhibition-section/mobile/nba-poster-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 260px)"
+                      srcset="
+                        ./images/exhibition-section/mobile/nba-poster-mobile.jpg    1x,
+                        ./images/exhibition-section/mobile/nba-poster-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img src="./images/nba-poster-tablet.jpg" alt="work-example" />
+                  </picture>
                   <div class="exhibition-list__overlay">
                     <p>
                       Технокряк это современная площадка распространения коронавируса. Компании
@@ -158,7 +259,54 @@
             <li class="exhibition-list__item">
               <a class="exhibition-list__link" href=""
                 ><div class="exhibition-list__card-thumb">
-                  <img src="./images/seafood.jpg" alt="Баннер ресторана" />
+                  <picture class="exhibition-list__picture">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/exhibition-section/desktop/seafood-desktop.webp    1x,
+                        ./images/exhibition-section/desktop/seafood-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/exhibition-section/desktop/seafood-desktop.jpg    1x,
+                        ./images/exhibition-section/desktop/seafood-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/exhibition-section/tablet/seafood-tablet.webp    1x,
+                        ./images/exhibition-section/tablet/seafood-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/exhibition-section/tablet/seafood-tablet.jpg    1x,
+                        ./images/exhibition-section/tablet/seafood-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 260px)"
+                      srcset="
+                        ./images/exhibition-section/mobile/seafood-mobile.webp    1x,
+                        ./images/exhibition-section/mobile/seafood-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 260px)"
+                      srcset="
+                        ./images/exhibition-section/mobile/seafood-mobile.jpg    1x,
+                        ./images/exhibition-section/mobile/seafood-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img src="./images/seafood-tablet.jpg" alt="work-example" />
+                  </picture>
                   <div class="exhibition-list__overlay">
                     <p>
                       Технокряк это современная площадка распространения коронавируса. Компании
@@ -176,7 +324,54 @@
             <li class="exhibition-list__item">
               <a class="exhibition-list__link" href=""
                 ><div class="exhibition-list__card-thumb">
-                  <img src="./images/project-prime.jpg" alt="Наушники" />
+                  <picture class="exhibition-list__picture">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/exhibition-section/desktop/project-prime-desktop.webp    1x,
+                        ./images/exhibition-section/desktop/project-prime-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/exhibition-section/desktop/project-prime-desktop.jpg    1x,
+                        ./images/exhibition-section/desktop/project-prime-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/exhibition-section/tablet/project-prime-tablet.webp    1x,
+                        ./images/exhibition-section/tablet/project-prime-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/exhibition-section/tablet/project-prime-tablet.jpg    1x,
+                        ./images/exhibition-section/tablet/project-prime-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 260px)"
+                      srcset="
+                        ./images/exhibition-section/mobile/project-prime-mobile.webp    1x,
+                        ./images/exhibition-section/mobile/project-prime-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 260px)"
+                      srcset="
+                        ./images/exhibition-section/mobile/project-prime-mobile.jpg    1x,
+                        ./images/exhibition-section/mobile/project-prime-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img src="./images/project-prime-tablet.jpg" alt="work-example" />
+                  </picture>
                   <div class="exhibition-list__overlay">
                     <p>
                       Технокряк это современная площадка распространения коронавируса. Компании
@@ -194,7 +389,54 @@
             <li class="exhibition-list__item">
               <a class="exhibition-list__link" href=""
                 ><div class="exhibition-list__card-thumb">
-                  <img src="./images/project-boxes.jpg" alt="Коробки" />
+                  <picture class="exhibition-list__picture">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/exhibition-section/desktop/project-boxes-desktop.webp    1x,
+                        ./images/exhibition-section/desktop/project-boxes-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/exhibition-section/desktop/project-boxes-desktop.jpg    1x,
+                        ./images/exhibition-section/desktop/project-boxes-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/exhibition-section/tablet/project-boxes-tablet.webp    1x,
+                        ./images/exhibition-section/tablet/project-boxes-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/exhibition-section/tablet/project-boxes-tablet.jpg    1x,
+                        ./images/exhibition-section/tablet/project-boxes-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 260px)"
+                      srcset="
+                        ./images/exhibition-section/mobile/project-boxes-mobile.webp    1x,
+                        ./images/exhibition-section/mobile/project-boxes-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 260px)"
+                      srcset="
+                        ./images/exhibition-section/mobile/project-boxes-mobile.jpg    1x,
+                        ./images/exhibition-section/mobile/project-boxes-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img src="./images/project-boxes-tablet.jpg" alt="work-example" />
+                  </picture>
                   <div class="exhibition-list__overlay">
                     <p>
                       Технокряк это современная площадка распространения коронавируса. Компании
@@ -213,7 +455,54 @@
             <li class="exhibition-list__item">
               <a class="exhibition-list__link" href=""
                 ><div class="exhibition-list__card-thumb">
-                  <img src="./images/inspiration.jpg" alt="Элементы на мониторе" />
+                  <picture class="exhibition-list__picture">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/exhibition-section/desktop/inspiration-desktop.webp    1x,
+                        ./images/exhibition-section/desktop/inspiration-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/exhibition-section/desktop/inspiration-desktop.jpg    1x,
+                        ./images/exhibition-section/desktop/inspiration-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/exhibition-section/tablet/inspiration-tablet.webp    1x,
+                        ./images/exhibition-section/tablet/inspiration-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/exhibition-section/tablet/inspiration-tablet.jpg    1x,
+                        ./images/exhibition-section/tablet/inspiration-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 260px)"
+                      srcset="
+                        ./images/exhibition-section/mobile/inspiration-mobile.webp    1x,
+                        ./images/exhibition-section/mobile/inspiration-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 260px)"
+                      srcset="
+                        ./images/exhibition-section/mobile/inspiration-mobile.jpg    1x,
+                        ./images/exhibition-section/mobile/inspiration-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img src="./images/inspiration-tablet.jpg" alt="work-example" />
+                  </picture>
                   <div class="exhibition-list__overlay">
                     <p>
                       Технокряк это современная площадка распространения коронавируса. Компании
@@ -231,7 +520,54 @@
             <li class="exhibition-list__item">
               <a class="exhibition-list__link" href=""
                 ><div class="exhibition-list__card-thumb">
-                  <img src="./images/limited-edition.jpg" alt="Открытая книга" />
+                  <picture class="exhibition-list__picture">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/exhibition-section/desktop/limited-edition-desktop.webp    1x,
+                        ./images/exhibition-section/desktop/limited-edition-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/exhibition-section/desktop/limited-edition-desktop.jpg    1x,
+                        ./images/exhibition-section/desktop/limited-edition-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/exhibition-section/tablet/limited-edition-tablet.webp    1x,
+                        ./images/exhibition-section/tablet/limited-edition-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/exhibition-section/tablet/limited-edition-tablet.jpg    1x,
+                        ./images/exhibition-section/tablet/limited-edition-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 260px)"
+                      srcset="
+                        ./images/exhibition-section/mobile/limited-edition-mobile.webp    1x,
+                        ./images/exhibition-section/mobile/limited-edition-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 260px)"
+                      srcset="
+                        ./images/exhibition-section/mobile/limited-edition-mobile.jpg    1x,
+                        ./images/exhibition-section/mobile/limited-edition-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img src="./images/limited-edition-tablet.jpg" alt="work-example" />
+                  </picture>
                   <div class="exhibition-list__overlay">
                     <p>
                       Технокряк это современная площадка распространения коронавируса. Компании
@@ -249,7 +585,54 @@
             <li class="exhibition-list__item">
               <a class="exhibition-list__link" href=""
                 ><div class="exhibition-list__card-thumb">
-                  <img src="./images/project-lab.jpg" alt="Тематическое лого" />
+                  <picture class="exhibition-list__picture">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/exhibition-section/desktop/project-lab-desktop.webp    1x,
+                        ./images/exhibition-section/desktop/project-lab-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/exhibition-section/desktop/project-lab-desktop.jpg    1x,
+                        ./images/exhibition-section/desktop/project-lab-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/exhibition-section/tablet/project-lab-tablet.webp    1x,
+                        ./images/exhibition-section/tablet/project-lab-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/exhibition-section/tablet/project-lab-tablet.jpg    1x,
+                        ./images/exhibition-section/tablet/project-lab-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 260px)"
+                      srcset="
+                        ./images/exhibition-section/mobile/project-lab-mobile.webp    1x,
+                        ./images/exhibition-section/mobile/project-lab-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 260px)"
+                      srcset="
+                        ./images/exhibition-section/mobile/project-lab-mobile.jpg    1x,
+                        ./images/exhibition-section/mobile/project-lab-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img src="./images/project-lab-tablet.jpg" alt="work-example" />
+                  </picture>
                   <div class="exhibition-list__overlay">
                     <p>
                       Технокряк это современная площадка распространения коронавируса. Компании
@@ -267,7 +650,54 @@
             <li class="exhibition-list__item">
               <a class="exhibition-list__link" href=""
                 ><div class="exhibition-list__card-thumb">
-                  <img src="./images/growing-business.jpg" alt="Человек за лэптопом" />
+                  <picture class="exhibition-list__picture">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/exhibition-section/desktop/growing-business-desktop.webp    1x,
+                        ./images/exhibition-section/desktop/growing-business-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/exhibition-section/desktop/growing-business-desktop.jpg    1x,
+                        ./images/exhibition-section/desktop/growing-business-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/exhibition-section/tablet/growing-business-tablet.webp    1x,
+                        ./images/exhibition-section/tablet/growing-business-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/exhibition-section/tablet/growing-business-tablet.jpg    1x,
+                        ./images/exhibition-section/tablet/growing-business-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 260px)"
+                      srcset="
+                        ./images/exhibition-section/mobile/growing-business-mobile.webp    1x,
+                        ./images/exhibition-section/mobile/growing-business-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 260px)"
+                      srcset="
+                        ./images/exhibition-section/mobile/growing-business-mobile.jpg    1x,
+                        ./images/exhibition-section/mobile/growing-business-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img src="./images/growing-business-tablet.jpg" alt="work-example" />
+                  </picture>
                   <div class="exhibition-list__overlay">
                     <p>
                       Технокряк это современная площадка распространения коронавируса. Компании
