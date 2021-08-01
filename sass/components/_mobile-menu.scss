@@ -41,7 +41,7 @@
   padding: 0;
   border: none;
 
-   &:hover .mobile-menu__close-icon,
+  &:hover .mobile-menu__close-icon,
   &:focus .mobile-menu__close-icon {
     transition: fill 250ms var(--transform-timing-function);
     fill: var(--accent-color);
@@ -60,11 +60,11 @@
   }
 }
 .navigation__link {
-  transition: color 250ms $transform-timing-function;
+  transition: color 250ms var(--transform-timing-function);
 
   &:hover,
   &:focus {
-    color: $accent-color;
+    color: var(--accent-color);
   }
 }
 .monile-menu__contacts-wrapper {
@@ -84,11 +84,12 @@
 .contacts__link {
   color: var(--primary-text-color);
 
-  transition: color 250ms $transform-timing-function;
+  transition: color 250ms var(--transform-timing-function);
 
   &:hover,
   &:focus {
-    color: $accent-color;
+    color: var(--accent-color);
+    @include fontSource(500, 34px, 40px, 0.02em);
   }
 }
 

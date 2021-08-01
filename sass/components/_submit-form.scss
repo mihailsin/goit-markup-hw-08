@@ -54,6 +54,13 @@
   fill: var(--whitetext-color);
   margin-left: 10px;
 }
+@media screen and (min-width: 768px) {
+  .submit-form__input {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .submit-form {

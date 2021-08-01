@@ -2,11 +2,6 @@
   @media screen and(max-width: 767px) {
     margin-bottom: 30px;
   }
-  &:first-child .exhibition-list__card-meta {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      padding-bottom: 56px;
-    }
-  }
 }
 .exhibition-list__link {
   display: block;
@@ -48,6 +43,7 @@
 }
 .exhibition-list__card-meta {
   padding: 20px 24px;
+  padding-right: 0;
   border-left: 1px solid var(--subimage-box-color);
   border-right: 1px solid var(--subimage-box-color);
   border-bottom: 1px solid var(--subimage-box-color);

@@ -36,13 +36,13 @@
   color: var(--title-text-color);
 }
 .backdrop__content {
-  position: absolute;
-  max-width: 528px;
+  position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  min-height: 581px;
+  width: 90vw;
+  height: 100vh;
 
+  transform: translate(-50%, -50%) scale(1);
   background-color: var(--whitetext-color);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -82,5 +82,17 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 528px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .backdrop__content {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .backdrop__content {
+    width: 450px;
+    height: 609px;
   }
 }

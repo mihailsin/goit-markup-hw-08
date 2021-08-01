@@ -7,6 +7,9 @@
 }
 .logo-address__wrapper {
   @include columnedFlex($secondary-axis: center);
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 }
 .page-footer__wrapper {
   @include columnedFlex($secondary-axis: center);
@@ -24,7 +27,6 @@
 .footer-contacts-list {
   @media screen and (max-width: 1199px) {
     @include columnedFlex($secondary-axis: center);
-    margin-bottom: 60px;
   }
 }
 .footer-contacts-list__item:not(:last-child) {
