@@ -22,25 +22,24 @@
 }
 .backdrop__wrapper {
   width: 100%;
-  padding: 40px;
+  padding: 10px;
 }
 .backdrop__title {
   display: block;
+  max-width: 80%;
   margin-bottom: 12px;
 
-  font-size: 20px;
-  line-height: 1.15;
+  @include fontSource(false, 15px, 1.08, 0.02em);
   text-align: center;
-  letter-spacing: 0.03em;
 
   color: var(--title-text-color);
 }
 .backdrop__content {
-  position: fixed;
-  top: 50%;
+  position: relative;
+  top: 45%;
   left: 50%;
-  width: 90vw;
-  height: 100vh;
+  width: 90%;
+  height: 90%;
 
   transform: translate(-50%, -50%) scale(1);
   background-color: var(--whitetext-color);
@@ -77,22 +76,31 @@
   fill: var(--blacktext-color);
   transition: fill 250ms var(--transform-timing-function);
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 480px) {
   .backdrop__wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 528px;
+    padding: 40px;
+  }
+  .backdrop__content {
+    top: 50%;
+    width: 450px;
+    height: 609px;
+  }
+  .backdrop__title {
+    @include fontSource(false, 20px, 1.15, 0.03em);
+    max-width: unset;
   }
 }
+
 @media screen and (min-width: 768px) {
   .backdrop__content {
+    top: 50%;
     width: 450px;
     height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
   .backdrop__content {
-    width: 450px;
-    height: 609px;
+    width: 528px;
+    height: 581px;
   }
 }
