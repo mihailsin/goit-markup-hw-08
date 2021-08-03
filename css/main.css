@@ -1344,6 +1344,7 @@ a {
 @media screen and (min-width: 768px) {
   .backdrop__content {
     width: 450px;
+    height: 630px;
   }
 }
 
@@ -1351,7 +1352,6 @@ a {
   .backdrop__content {
     width: 528px;
     height: 581px;
-    overflow: unset;
   }
 }
 
