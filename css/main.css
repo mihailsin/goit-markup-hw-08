@@ -468,9 +468,6 @@ a {
 
 @media screen and (min-width: 768px) {
   .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    height: 600px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-overlay-color)), to(var(--hero-overlay-color))), url(../images/hero-section/desktop/hero-background-desktop.jpg);
     background-image: linear-gradient(var(--hero-overlay-color), var(--hero-overlay-color)), url(../images/hero-section/desktop/hero-background-desktop.jpg);
   }
@@ -480,6 +477,14 @@ a {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-overlay-color)), to(var(--hero-overlay-color))), url(../images/hero-section/desktop/hero-background-desktop@2x.jpg);
     background-image: linear-gradient(var(--hero-overlay-color), var(--hero-overlay-color)), url(../images/hero-section/desktop/hero-background-desktop@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
   }
 }
 
@@ -1261,11 +1266,13 @@ a {
 }
 
 .backdrop__content {
-  position: relative;
-  top: 45%;
+  position: absolute;
+  top: 50%;
   left: 50%;
   width: 90%;
-  height: 90%;
+  max-height: 100%;
+  margin: auto;
+  overflow: auto;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   background-color: var(--whitetext-color);
