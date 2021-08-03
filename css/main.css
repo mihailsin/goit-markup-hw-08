@@ -592,6 +592,12 @@ a {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .advantages-list__title {
+    text-align: unset;
+  }
+}
+
 .advantages-list__description {
   font-size: 14px;
   line-height: 1.71;
