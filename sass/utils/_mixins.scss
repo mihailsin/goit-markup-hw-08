@@ -10,7 +10,7 @@
   align-items: $secondary-axis;
 }
 
-@mixin wrappedFlex($type: flex, $line-wrapping: wrap) {
+@mixin flexedGrid($type: flex, $line-wrapping: wrap) {
   display: $type;
   flex-wrap: $line-wrapping;
   margin-top: -30px;

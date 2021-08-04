@@ -6,7 +6,7 @@
   @extend %section-title;
 }
 .clients-list {
-  @include wrappedFlex;
+  @include flexedGrid;
 }
 .clients-list__item {
   margin-top: 30px;
@@ -37,11 +37,17 @@
     outline-color: var(--accent-color);
   }
 }
+
+// Media - rules, which defines grid of items size for tablet screen.
+
 @media screen and(min-width: 768px) {
   .clients-list__item {
     flex-basis: calc((100% - 90px) / 3);
   }
 }
+
+// Media - rules, which defines grid of items size for laptop/desktop screen.
+
 @media screen and(min-width: 1200px) {
   .clients-list__item {
     flex-basis: calc((100% - 6 * 30px) / 6);

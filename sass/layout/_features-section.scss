@@ -11,7 +11,7 @@
   @extend %section-title;
 }
 .features-list {
-  @include wrappedFlex;
+  @include flexedGrid;
 }
 .features-list__item {
   position: relative;

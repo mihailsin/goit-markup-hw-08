@@ -61,9 +61,12 @@
   font-size: 16px;
   line-height: 1.88;
 }
+
+// Media - rules, which defines grid of items size for tablet screen.
+
 .exhibition-list {
   @media screen and(min-width: 768px) {
-    @include wrappedFlex;
+    @include flexedGrid;
   }
 }
 @media screen and(min-width: 768px) {
@@ -72,6 +75,8 @@
     margin-left: 30px;
     flex-basis: calc((100% - 60px) / 2);
   }
+
+  // Media - rules, which defines grid of items size for laptop/desktop screen.
 }
 @media screen and(min-width: 1200px) {
   .exhibition-list__item {

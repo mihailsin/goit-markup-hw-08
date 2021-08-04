@@ -37,15 +37,8 @@
       url(../images/hero-section/desktop/hero-background-desktop@2x.jpg);
   }
 }
-@media screen and (min-width: 1200px) {
-  .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    height: 600px;
-  }
-}
 .hero-title {
-  max-width: 620px;
+  max-width: 400px;
   color: var(--hero-text-color);
 
   @include fontSource(900, 26px, 1.61, 0.06em);
@@ -64,5 +57,15 @@
   &:hover,
   &:focus {
     background-color: var(--modal-btn-hover-color);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+  }
+  .hero-title {
+    max-width: 700px;
   }
 }

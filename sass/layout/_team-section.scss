@@ -36,9 +36,12 @@
 .team-list__description {
   margin-bottom: 16px;
 }
+
+// Media - rules, which defines grid of items size for tablet screen.
+
 @media screen and (min-width: 768px) {
   .team-list {
-    @include wrappedFlex;
+    @include flexedGrid;
   }
   .team-list__item {
     margin-top: 30px;
@@ -46,6 +49,9 @@
     flex-basis: calc((100% - 60px) / 2);
   }
 }
+
+// Media - rules, which defines grid of items size for laptop/desktop screen.
+
 @media screen and (min-width: 1200px) {
   .team-list__item {
     flex-basis: calc((100% - 120px) / 4);
