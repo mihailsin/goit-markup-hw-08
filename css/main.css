@@ -452,14 +452,14 @@ a {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-overlay-color)), to(var(--hero-overlay-color))), url(../images/hero-section/tablet/hero-background-tablet.jpg);
     background-image: linear-gradient(var(--hero-overlay-color), var(--hero-overlay-color)), url(../images/hero-section/tablet/hero-background-tablet.jpg);
   }
 }
 
-@media (min-device-pixel-ratio: 2) and (min-width: 480px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+@media (min-device-pixel-ratio: 2) and (min-width: 481px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-overlay-color)), to(var(--hero-overlay-color))), url(../images/hero-section/tablet/hero-background-tablet@2x.jpg);
     background-image: linear-gradient(var(--hero-overlay-color), var(--hero-overlay-color)), url(../images/hero-section/tablet/hero-background-tablet@2x.jpg);
