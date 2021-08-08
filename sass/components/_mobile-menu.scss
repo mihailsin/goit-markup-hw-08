@@ -13,7 +13,9 @@
   background-color: var(--whitetext-color);
 
   transform: translateY(-100%);
-  transition: transform 250ms var(--transform-timing-function);
+  transition: transform 250ms var(--transform-timing-function),
+    visibility 250ms var(--transform-timing-function),
+    opacity 250ms var(--transform-timing-function);
 }
 .mobile-menu--is-open {
   opacity: 1;

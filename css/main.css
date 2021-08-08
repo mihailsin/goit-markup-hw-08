@@ -1582,10 +1582,10 @@ a {
   background-color: var(--whitetext-color);
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
-  -webkit-transition: -webkit-transform 250ms var(--transform-timing-function);
-  transition: -webkit-transform 250ms var(--transform-timing-function);
-  transition: transform 250ms var(--transform-timing-function);
-  transition: transform 250ms var(--transform-timing-function), -webkit-transform 250ms var(--transform-timing-function);
+  -webkit-transition: visibility 250ms var(--transform-timing-function), opacity 250ms var(--transform-timing-function), -webkit-transform 250ms var(--transform-timing-function);
+  transition: visibility 250ms var(--transform-timing-function), opacity 250ms var(--transform-timing-function), -webkit-transform 250ms var(--transform-timing-function);
+  transition: transform 250ms var(--transform-timing-function), visibility 250ms var(--transform-timing-function), opacity 250ms var(--transform-timing-function);
+  transition: transform 250ms var(--transform-timing-function), visibility 250ms var(--transform-timing-function), opacity 250ms var(--transform-timing-function), -webkit-transform 250ms var(--transform-timing-function);
 }
 
 .mobile-menu--is-open {
